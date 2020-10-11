@@ -195,6 +195,14 @@ PrefabInstance:
       propertyPath: laserPrefab
       value: 
       objectReference: {fileID: 4817513972734255452, guid: 7645adf8af574e34183ac3bcd7cad6c3, type: 3}
+    - target: {fileID: 2510209358754996796, guid: 53658d40ea321ee44a7cc442b36e18f8, type: 3}
+      propertyPath: projectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510209358754996796, guid: 53658d40ea321ee44a7cc442b36e18f8, type: 3}
+      propertyPath: projectileFiringPeriod
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2510209358754996798, guid: 53658d40ea321ee44a7cc442b36e18f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
