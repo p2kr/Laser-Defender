@@ -155,6 +155,9 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: 8634ce481e869f24da14ac01c0fdd9f6, type: 2}
   - {fileID: 11400000, guid: a708d633262974c4797268d300757cab, type: 2}
+  - {fileID: 11400000, guid: 71402b35a0644ec4ea3cbb6d207d251f, type: 2}
+  - {fileID: 11400000, guid: 0fd22719be1dac541a1e63478e098d48, type: 2}
+  startingWave: 0
 --- !u!4 &268587576
 Transform:
   m_ObjectHideFlags: 0
@@ -614,18 +617,6 @@ PrefabInstance:
     - target: {fileID: 5984888789582786145, guid: c5c7e65505c53d94daddb4067393d124, type: 3}
       propertyPath: m_Name
       value: Path (0)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984888790426992272, guid: c5c7e65505c53d94daddb4067393d124, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984888790426992272, guid: c5c7e65505c53d94daddb4067393d124, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984888790736185394, guid: c5c7e65505c53d94daddb4067393d124, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.089999914
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5c7e65505c53d94daddb4067393d124, type: 3}
