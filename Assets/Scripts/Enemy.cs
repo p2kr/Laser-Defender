@@ -1,32 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float health = 100;
-    [SerializeField] float shotCounter; // debugging only
-    [SerializeField] float minTimeBetweenShots = 0.2f;
-    [SerializeField] float maxTimeBetweenShots = 3f;
-    [SerializeField] GameObject projectile;
-    [SerializeField] float projectileSpeed = 10f;
+    [Header("Enemy Stats")]
+    [SerializeField] private float health = 100;
+    [SerializeField] private int scoreValue = 150;
+
+    [Header("Shooting")]
+    [SerializeField] private float shotCounter; // debugging only
+    [SerializeField] private float minTimeBetweenShots = 0.2f;
+    [SerializeField] private float maxTimeBetweenShots = 3f;
+    [SerializeField] private GameObject projectile;
+    [SerializeField] private float projectileSpeed = 10f;
 
     [Header("VFX and SFX")]
-    [SerializeField] GameObject deathVFX;
-    [SerializeField] float durationOfExplosion = 1f;
-    [SerializeField] AudioClip deathSound;
-    [Range(0, 1)] [SerializeField] float deathSoundVolume = 0.75f;
-    [SerializeField] AudioClip shootSound;
-    [Range(0, 1)] [SerializeField] float shootSoundVolume = 0.25f;
+    [SerializeField] private GameObject deathVFX;
+    [SerializeField] private float durationOfExplosion = 1f;
+    [SerializeField] private AudioClip deathSound;
+    [Range(0, 1)] [SerializeField] private float deathSoundVolume = 0.75f;
+    [SerializeField] private AudioClip shootSound;
+    [Range(0, 1)] [SerializeField] private float shootSoundVolume = 0.25f;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         CountDownAndShoot();
     }
@@ -68,6 +70,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
         Destroy(gameObject);
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, durationOfExplosion);
