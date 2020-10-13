@@ -10103,11 +10103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5593764561739202709, guid: 05596f0e1a28cf649b672b4b279d5c2e, type: 3}
       propertyPath: m_Name
-      value: Shredder (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7233660757510889407, guid: 05596f0e1a28cf649b672b4b279d5c2e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+      value: Shredder Bottom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05596f0e1a28cf649b672b4b279d5c2e, type: 3}
@@ -10449,11 +10445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5593764561739202709, guid: 05596f0e1a28cf649b672b4b279d5c2e, type: 3}
       propertyPath: m_Name
-      value: Shredder
-      objectReference: {fileID: 0}
-    - target: {fileID: 7233660757510889407, guid: 05596f0e1a28cf649b672b4b279d5c2e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+      value: Shredder Top
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05596f0e1a28cf649b672b4b279d5c2e, type: 3}
