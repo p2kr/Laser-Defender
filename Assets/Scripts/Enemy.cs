@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.ComponentModel;
+using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int scoreValue = 150;
 
     [Header("Shooting")]
-    [SerializeField] private float shotCounter; // debugging only
+    private float shotCounter; // debugging only
     [SerializeField] private float minTimeBetweenShots = 0.2f;
     [SerializeField] private float maxTimeBetweenShots = 3f;
     [SerializeField] private GameObject projectile;

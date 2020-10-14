@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
     }
-
+    public int GetHealth() { return Mathf.Clamp(health, 0, health); }
     private void SetUpMoveBoundaries()
     {
         Camera gameCamera = Camera.main;

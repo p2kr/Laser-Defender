@@ -434,6 +434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 4706451915898447735, guid: ff671ecc8397a0d42bd841a77357177f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8434614730916542615, guid: ff671ecc8397a0d42bd841a77357177f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

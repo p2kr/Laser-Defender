@@ -3,7 +3,7 @@
 public class GameSession : MonoBehaviour
 {
     private int score = 0;
-
+    private int health = 200;
     private void Awake()
     {
         SetUpSingleton();
@@ -19,6 +19,7 @@ public class GameSession : MonoBehaviour
     }
 
     public int GetScore() { return score; }
+    
     public void AddToScore(int scoreValue) { score += scoreValue; }
     public void ResetGame() { Destroy(gameObject); }
 }
